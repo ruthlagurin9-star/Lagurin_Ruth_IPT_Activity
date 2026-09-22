@@ -2,7 +2,9 @@
 
 namespace Database\Seeders;
 
-use App\Models\Product;
+use App\Models\students;
+use App\Models\courses;
+use App\Models\enrollments;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -13,6 +15,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-            Product::factory(50)->create();
+            students::factory(50)->create();
     }
 }
